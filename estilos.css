@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
 nav{
     position:fixed;
     display: flex;
@@ -7,9 +11,10 @@ nav{
     justify-content: center;
     flex-wrap: wrap;
     top:0;
+    padding: 10px;
 }
 body{
-    padding-top: 50px;
+    padding-top: 40px;
 }
 h3{
     margin-left: 20px;
@@ -30,16 +35,16 @@ footer{
     padding: 10px;
 }
 article.inicio{
-    background-color: rgb(13, 199, 13);
+    background-color: rgb(63, 163, 63);
     color:#fff;
-    width: 100%;
-    left: 0;
     display: grid;
     justify-items: center;
-    top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-article header{
+article header{ 
     margin-top: 30px;
+    font-size: 25px;
 }
 article.inicio p{
     margin-bottom: 50px;
@@ -49,4 +54,52 @@ article.contenido{
     justify-content: space-around;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.titulo{
+    font-size: 20px;
+}
+div{
+    display: flex;
+    justify-content: space-around;
+}
+
+div p{
+    background-color: rgb(224, 224, 224);
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+div.servicios p{
+    width: 100%;
+}
+div.portafolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div.nosotros{
+    margin-left: 370px;
+    margin-right: 370px;
+    align-items: center;
+}
+div.portafolio p{
+    width: 300px;
+}
+div.contenido p{
+    width: 100%;
+}
+div.nosotros p{
+    width: 100%;
+}
+form.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form.contacto input,textarea,button{
+    margin-bottom: 10px;
+    width: 20%;
+    padding: 10px;
 }
